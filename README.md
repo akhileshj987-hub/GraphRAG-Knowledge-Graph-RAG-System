@@ -44,20 +44,18 @@ GraphRAG goes beyond simple chatbots. It **reads your documents**, **builds a kn
 | 🔒 **Privacy First** | Data never leaves your computer |
 
 ---
-
-## 🏗️ System Architecture
 ## 🏗️ System Architecture
 
 ```mermaid
 graph TD
-    A[📄 Documents<br/>(.txt files)] --> B[🐍 Python Pipeline]
-    B --> C[🔍 spaCy NER]
-    B --> D[📊 ChromaDB<br/>Vector DB]
-    C --> E[🕸️ Neo4j<br/>Knowledge Graph]
-    E --> F[🤖 Ollama LLM]
+    A[Documents] --> B[Python Pipeline]
+    B --> C[spaCy NER]
+    B --> D[ChromaDB Vector DB]
+    C --> E[Neo4j Knowledge Graph]
+    E --> F[Ollama LLM]
     D --> F
-    F --> G[🌐 Streamlit<br/>Web UI]
-    B --> H[💾 SQL Server<br/>Metadata]
+    F --> G[Streamlit Web UI]
+    B --> H[SQL Server Metadata]
     
     style A fill:#e1f5fe
     style E fill:#fff3e0
