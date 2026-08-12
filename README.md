@@ -46,18 +46,21 @@ GraphRAG goes beyond simple chatbots. It **reads your documents**, **builds a kn
 ---
 
 ## 🏗️ System Architecture
-─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│   📄 Documents  │────▶│  🐍 Python Pipeline │────▶│ 🕸️ Neo4j Graph  │
-│   (.txt files)  │     │  (spaCy NER)      │     │ (Entities +     │
-└─────────────────┘     └──────────────────┘     │  Relationships) │
-└────────┬────────┘
-│
-┌─────────────────┐     ┌──────────────────┐              │
-│  🌐 Streamlit   │◀────│  🤖 Ollama LLM   │◀─────────────┤
-│    Web UI       │     │ (Answer Generator)│              │
-└─────────────────┘     └──────────────────┘              │
-│
-┌─────────────────┐     ┌──────────────────┐              │
-│  💾 SQL Server  │◀────│ 📊 ChromaDB      │◀─────────────┘
-│  (Metadata)     │     │ (Vector Search)   │
-└─────────────────┘     └──────────────────┘
+## 🏗️ System Architecture
+
+```mermaid
+graph TD
+    A[📄 Documents<br/>(.txt files)] --> B[🐍 Python Pipeline]
+    B --> C[🔍 spaCy NER]
+    B --> D[📊 ChromaDB<br/>Vector DB]
+    C --> E[🕸️ Neo4j<br/>Knowledge Graph]
+    E --> F[🤖 Ollama LLM]
+    D --> F
+    F --> G[🌐 Streamlit<br/>Web UI]
+    B --> H[💾 SQL Server<br/>Metadata]
+    
+    style A fill:#e1f5fe
+    style E fill:#fff3e0
+    style F fill:#e8f5e9
+    style G fill:#fce4ec
+    style H fill:#f3e5f5
