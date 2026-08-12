@@ -46,3 +46,18 @@ GraphRAG goes beyond simple chatbots. It **reads your documents**, **builds a kn
 ---
 
 ## 🏗️ System Architecture
+─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│   📄 Documents  │────▶│  🐍 Python Pipeline │────▶│ 🕸️ Neo4j Graph  │
+│   (.txt files)  │     │  (spaCy NER)      │     │ (Entities +     │
+└─────────────────┘     └──────────────────┘     │  Relationships) │
+└────────┬────────┘
+│
+┌─────────────────┐     ┌──────────────────┐              │
+│  🌐 Streamlit   │◀────│  🤖 Ollama LLM   │◀─────────────┤
+│    Web UI       │     │ (Answer Generator)│              │
+└─────────────────┘     └──────────────────┘              │
+│
+┌─────────────────┐     ┌──────────────────┐              │
+│  💾 SQL Server  │◀────│ 📊 ChromaDB      │◀─────────────┘
+│  (Metadata)     │     │ (Vector Search)   │
+└─────────────────┘     └──────────────────┘
