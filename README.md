@@ -39,6 +39,8 @@ GraphRAG goes beyond simple chatbots. It **reads your documents**, **builds a kn
 
 > 🔥 *Same architecture Microsoft, Google & Bloomberg use for enterprise search.*
 
+---
+
 ### 🔥 What Makes It Special?
 
 | Feature | What It Means |
@@ -53,20 +55,7 @@ GraphRAG goes beyond simple chatbots. It **reads your documents**, **builds a kn
 | 🔒 **Privacy First** | Data never leaves your computer |
 
 ---
-## 🛠️ Tech Stack
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat&logo=neo4j&logoColor=white" />
-  <img src="https://img.shields.io/badge/ChromaDB-FF6F61?style=flat&logoColor=white" />
-  <img src="https://img.shields.io/badge/spaCy-09A3D5?style=flat&logo=spacy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white" />
-  <img src="https://img.shields.io/badge/Ollama-000000?style=flat&logoColor=white" />
-  <img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
-</p>
-
----
 
 ## 📊 Results
 
