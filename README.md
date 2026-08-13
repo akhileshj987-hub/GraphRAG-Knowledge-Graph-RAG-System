@@ -26,9 +26,19 @@
 
 GraphRAG goes beyond simple chatbots. It **reads your documents**, **builds a knowledge graph** of entities & relationships, and **answers complex questions** by connecting facts across multiple files.
 
+---
+## 🎯 About The Project
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Privacy-100%25_Offline-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AI-GraphRAG-purple?style=for-the-badge" />
+</p>
+
+**GraphRAG** is an intelligent, **privacy-first** document question-answering system that goes far beyond simple chatbots. Instead of calling an API like ChatGPT, it **reads your documents**, **builds a knowledge graph** of entities and relationships, and **answers complex multi-hop questions** by connecting facts across multiple files.
+
 > 🔥 *Same architecture Microsoft, Google & Bloomberg use for enterprise search.*
 
----
 
 ## ✨ Key Features
 
